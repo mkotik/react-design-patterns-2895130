@@ -1,6 +1,11 @@
-import { RegularList } from "./RegularList";
-import { SmallPersonListItem } from "./people/SmallPersonListItem";
+
+import { RegularList } from "./RegularList.js";
 import { LargePersonListItem } from "./people/LargePersonListItem";
+import { SmallPersonListItem } from "./people/SmallPersonListItem";
+import { SmallProductListItem } from "./products/SmallProductListItem";
+import { LargeProductListItem } from "./products/LargeProductListItem";
+import { NumberedList } from "./NumberedList.js";
+
 
 const people = [
   {
@@ -50,14 +55,22 @@ function App() {
       <RegularList
         items={people}
         resourceName="person"
-        itemComponent={SmallPersonListItem}
+        itemComponent={LargePersonListItem}
       />
-      {/* //resourceName is the name of the prop that SmallPersonListItem &
-      LargePersonListItem are expecting */}
       <RegularList
         items={people}
         resourceName="person"
-        itemComponent={LargePersonListItem}
+        itemComponent={SmallPersonListItem}
+      />
+      <RegularList
+        items={products}
+        resourceName="product"
+        itemComponent={SmallProductListItem}
+      />
+      <NumberedList
+        items={products}
+        resourceName="product"
+        itemComponent={LargeProductListItem}
       />
     </>
   );
