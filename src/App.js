@@ -1,7 +1,12 @@
+import { CurrentUserLoader } from "./CurrentUserLoader.js";
+import { UserInfo } from "./UserInfo.js";
+
 function App() {
-	return (
-		<h1>Your code goes here</h1>
-	);
+  return (
+    <CurrentUserLoader>
+      <UserInfo />
+    </CurrentUserLoader>
+  );
 }
 
 export default App;
