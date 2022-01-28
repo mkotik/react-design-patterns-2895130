@@ -1,9 +1,11 @@
+
 import { RegularList } from "./RegularList.js";
 import { LargePersonListItem } from "./people/LargePersonListItem";
 import { SmallPersonListItem } from "./people/SmallPersonListItem";
 import { SmallProductListItem } from "./products/SmallProductListItem";
 import { LargeProductListItem } from "./products/LargeProductListItem";
 import { NumberedList } from "./NumberedList.js";
+
 
 const people = [
   {
