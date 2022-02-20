@@ -1,6 +1,11 @@
+import {UserInfo} from "./UserInfo"
+im
+
 function App() {
 	return (
-		<h1>Your code goes here</h1>
+		<div>
+		<UserInfo userId="123" />
+		</div>
 	);
 }
 
